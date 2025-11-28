@@ -1,0 +1,92 @@
+.container {
+  padding: 50px 0;
+}
+
+/* Title */
+.title {
+  color: white;
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+}
+
+/* Responsive Grid */
+.grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /* This line makes the grid automatically shrink and expand */
+}
+
+/* Card */
+.card {
+  background: #0b2447;
+  border: 1px solid #19376d;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #576cbc;
+}
+
+/* Icons inside card */
+.card .icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Text inside card */
+.card p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .card .icon {
+    font-size: 2.7rem;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Very Small Mobile (≤ 380px) */
+@media (max-width: 380px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
