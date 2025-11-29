@@ -66,29 +66,12 @@
     }
 
     .links {
-        align-items: center;
+        align-items: left;
+        font-size: 5px;
     }
 }
 .icon {
     font-size: 40px;
+    
 }
 
-/* Mobile */
-@media screen and (max-width: 830px) {
-
-    .text h2 {
-        font-size: 45px;
-    }
-
-    .text p {
-        font-size: 24px;
-    }
-
-    .link a {
-        font-size: 20px;
-    }
-
-    .icon {
-        font-size: 25px;
-    }
-}
