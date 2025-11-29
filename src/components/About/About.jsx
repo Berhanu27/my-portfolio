@@ -9,13 +9,13 @@ const About = () => {
 
       <div className={styles.content}>
 
-        {/* LEFT SIDE IMAGE */}
-        <img src="/aboutimage.png" alt="About section" className={styles.aboutImg} />
+        {/* LEFT IMAGE */}
+        <img src="/about/aboutimage.png"
+ alt="About section" className={styles.aboutImg} />
 
-        {/* RIGHT SIDE ITEMS */}
+        {/* RIGHT SIDE */}
         <ul className={styles.aboutItems}>
-
-          {/* Frontend */}
+          
           <li className={styles.aboutItem}>
             <FiMousePointer className={styles.icon} />
             <div>
@@ -24,7 +24,6 @@ const About = () => {
             </div>
           </li>
 
-          {/* Backend */}
           <li className={styles.aboutItem}>
             <FiServer className={styles.icon} />
             <div>
@@ -33,7 +32,6 @@ const About = () => {
             </div>
           </li>
 
-          {/* UI Designer */}
           <li className={styles.aboutItem}>
             <FiPenTool className={styles.icon} />
             <div>
