@@ -1,3 +1,4 @@
+
 /* Main container */
 .container {
   width: 100%;
@@ -29,10 +30,36 @@
 
 /* Paragraph */
 .description {
+font-size: 22px;
+
   line-height: 1.6;
   color: white;
   max-width: 500px;
+
+  /* typing effect */
+  overflow: hidden;
+  border-right: 2px solid white;
+  display: inline-block;
+
+  animation: typing 3.5s steps(40, end), blink 0.7s step-end infinite;
 }
+
+/* animate the width */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;   /* full multi-line width */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 
 /* Contact button */
 .contactBtn {

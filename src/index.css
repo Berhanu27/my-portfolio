@@ -13,3 +13,9 @@ html, body {
   background: var(--color-bg);
   font-family: var(--font-robot), sans-serif;
 }
+body {
+  font-family: var(--font-body);
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
