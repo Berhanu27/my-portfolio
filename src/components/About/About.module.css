@@ -1,5 +1,6 @@
 @import "../../vars.css";
 
+/* Main Container */
 .container {
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
@@ -11,6 +12,7 @@
   margin-right: 10%;
 }
 
+/* Title */
 .title {
   color: var(--color-text);
   font-size: 35px;
@@ -19,19 +21,33 @@
   text-transform: uppercase;
 }
 
+/* Layout that holds Image + Items */
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start; /* ensures items start at the top */
+  gap: 40px; /* space between image and content */
+  margin-top: 30px;
 }
 
+/* Left side image */
+.aboutImg {
+  width: 260px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0; /* prevents the image from shrinking */
+}
+
+/* Items (right side) */
 .aboutItems {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px; 
 }
 
+/* Each item box */
 .aboutItem {
   display: flex;
   gap: 20px;
@@ -53,21 +69,26 @@
   background-size: 100% 100%;
 }
 
+/* Icons */
 .icon {
   font-size: 40px;
   color: var(--color-primary);
 }
 
+/* Item title */
 .aboutItem h3 {
   font-size: 25px;
   font-weight: 600;
 }
 
+/* Item paragraph */
 .aboutItem p {
   font-size: 18px;
 }
 
+/* Mobile Responsive */
 @media screen and (max-width: 830px) {
+
   .container {
     background-color: transparent;
     padding-left: 0;
@@ -76,9 +97,23 @@
 
   .content {
     flex-direction: column;
+    align-items: center; /* centers image on mobile */
+    text-align: center;
+  }
+
+  .aboutImg {
+    width: 80%;
+    max-width: 300px;
   }
 
   .aboutItems {
     margin-top: 29px;
+    align-items: center;
+  }
+
+  .aboutItem {
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
   }
 }

@@ -124,3 +124,7 @@
     padding: 12px 22px;
   }
 }
+.topBlur,
+.bottomBlur {
+  z-index: -1;
+}

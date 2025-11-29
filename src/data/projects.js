@@ -1,32 +1,18 @@
-import projectA from "../assets/projectA.png";
-import projectB from "../assets/projectB.png";
-import projectC from "../assets/projectC.png";
-
 const projects = [
   {
-    image: projectA,
+    image: "/projects/projectA.png",
     title: "Project A",
-    description: "This is a project made to learn the latest languages by building an app.",
+    description: "This is a project...",
     stack: ["React", "Express", "Node"],
     demo: "https://demo.com",
-    source: "https://github.com/mylink"
+    source: "https://github.com/mylink",
   },
   {
-    image: projectB,
+    image: "/projects/projectB.png",
     title: "Project B",
-    description: "This is a project made to learn the latest languages by building an app.",
+    description: "This is a project...",
     stack: ["React", "Express", "Node"],
     demo: "https://demo.com",
-    source: "https://github.com/mylink"
+    source: "https://github.com/mylink",
   },
-  {
-    image: projectC,
-    title: "Project C",
-    description: "This is a project made to learn the latest languages by building an app.",
-    stack: ["React", "Express", "Node"],
-    demo: "https://demo.com",
-    source: "https://github.com/mylink"
-  }
 ];
-
-export default projects;

@@ -1,34 +1,34 @@
 import React from "react";
 import styles from "./About.module.css";
 import { FiMousePointer, FiServer, FiPenTool } from "react-icons/fi";
+import aboutImage from "./aboutImage.png";
 
 const About = () => {
   return (
     <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+      <h2 className={styles.title}>ABOUT</h2>
 
       <div className={styles.content}>
 
-        {/* REMOVE aboutImage.png since you don't have it */}
-        {/* You can add a React icon illustration later if you want */}
+        {/* LEFT SIDE IMAGE */}
+        <img src={aboutImage} alt="About section" className={styles.aboutImg} />
 
+        {/* RIGHT SIDE ITEMS */}
         <ul className={styles.aboutItems}>
-
-          {/* Frontend Developer */}
+          
+          {/* Frontend */}
           <li className={styles.aboutItem}>
             <FiMousePointer className={styles.icon} />
-            <div className={styles.aboutItemText}>
+            <div>
               <h3>Frontend Developer</h3>
-              <p>
-                I'm a frontend developer with experience building responsive and optimized websites.
-              </p>
+              <p>I'm a frontend developer with experience building responsive and optimized websites.</p>
             </div>
           </li>
 
-          {/* Backend Developer */}
+          {/* Backend */}
           <li className={styles.aboutItem}>
             <FiServer className={styles.icon} />
-            <div className={styles.aboutItemText}>
+            <div>
               <h3>Backend Developer</h3>
               <p>I develop fast and optimized backend systems and APIs.</p>
             </div>
@@ -37,13 +37,14 @@ const About = () => {
           {/* UI Designer */}
           <li className={styles.aboutItem}>
             <FiPenTool className={styles.icon} />
-            <div className={styles.aboutItemText}>
+            <div>
               <h3>UI Designer</h3>
               <p>I have designed multiple landing pages and created design systems.</p>
             </div>
           </li>
 
         </ul>
+
       </div>
     </section>
   );

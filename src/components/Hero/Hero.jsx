@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import brexmanImg from "./brexman.jpg";
+// import brexmanImg from "./brexman.jpg";
 
 const Hero = () => {
   return (
@@ -19,7 +19,12 @@ const Hero = () => {
         </a>
       </div>
 
-      <img src={brexmanImg} alt="Brexman's photo" className={styles.heroImg} />
+      <img
+  src="/hero/brexman.jpg"
+  alt="Brexman"
+  className={styles.heroImage}
+/>
+
 
       <div className={styles.topBlur}></div>
       <div className={styles.bottomBlur}></div>

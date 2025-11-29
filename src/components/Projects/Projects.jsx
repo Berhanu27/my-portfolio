@@ -10,9 +10,11 @@ const Projects = () => {
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (
           <div key={index} className={styles.card}>
+
             <img
-              src={`/src/components/Projects/${project.image}`}
+              src={import.meta.env.BASE_URL + project.image}
               alt={project.title}
+              className={styles.projectImage}
             />
 
             <h3>{project.title}</h3>
@@ -22,14 +24,9 @@ const Projects = () => {
               <strong>Stack:</strong> {project.stack.join(", ")}
             </p>
 
-            <a href={project.demo} target="_blank">
-              Demo
-            </a>
+            <a href={project.demo} target="_blank" rel="noreferrer">Demo</a>
             <br />
-
-            <a href={project.source} target="_blank">
-              Source Code
-            </a>
+            <a href={project.source} target="_blank" rel="noreferrer">Source Code</a>
           </div>
         ))}
       </div>

@@ -1,6 +1,6 @@
 [
   {
-    "image": "projectA.png",
+    "image": "projects/projectA.png",
     "title": "Project A",
     "description": "This is a project made to learn the latest languages by building an app.",
     "stack": ["React", "Express", "Node"],
@@ -8,7 +8,7 @@
     "source": "https://github.com/mylink"
   },
   {
-    "image": "projectB.png",
+    "image": "projects/projectB.png",
     "title": "Project B",
     "description": "This is a project made to learn the latest languages by building an app.",
     "stack": ["React", "Express", "Node"],
@@ -16,7 +16,7 @@
     "source": "https://github.com/mylink"
   },
   {
-    "image": "projectC.png",
+    "image": "projects/projectC.png",
     "title": "Project C",
     "description": "This is a project made to learn the latest languages by building an app.",
     "stack": ["React", "Express", "Node"],
