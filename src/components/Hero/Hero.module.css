@@ -55,10 +55,10 @@
 .heroImg {
   width: 50%;
   z-index: 1;
-
   animation: floating 3s ease-in-out infinite;
 }
 
+/* Floating animation */
 @keyframes floating {
   0% {
     transform: translateY(0);
@@ -71,6 +71,7 @@
   }
 }
 
+/* Blurs – Correct placement */
 .topBlur {
   position: absolute;
   width: 50vw;
@@ -81,7 +82,7 @@
   border-radius: 764px;
   background: rgba(25, 55, 109, 0.7);
   filter: blur(100px);
-  z-index: 0;
+  z-index: -1;
 }
 
 .bottomBlur {
@@ -94,9 +95,10 @@
   border-radius: 764px;
   background: rgba(25, 55, 109, 0.7);
   filter: blur(100px);
-  z-index: 0;
+  z-index: -1;
 }
 
+/* Responsive */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
@@ -123,8 +125,4 @@
     font-size: 24px;
     padding: 12px 22px;
   }
-}
-.topBlur,
-.bottomBlur {
-  z-index: -1;
 }

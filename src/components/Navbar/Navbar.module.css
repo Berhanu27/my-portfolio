@@ -6,8 +6,10 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 61px;
-  margin: 0 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   z-index: 2;
+  overflow-x: hidden;
 }
 
 .title {
@@ -41,16 +43,20 @@
   cursor: pointer;
 }
 
+/* Mobile */
 @media screen and (max-width: 830px) {
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .menu {
     position: absolute;
-    right: 0;
-    margin-right: 10%;
+    top: 100%;
+    right: 5%;
     flex-direction: column;
     align-items: flex-end;
     gap: 11px;
@@ -66,7 +72,7 @@
     flex-direction: column;
     align-items: center;
     gap: 13px;
-    padding: 24px 33px;
+    padding: 18px 24px;
     border-radius: 10px;
     background: linear-gradient(
       0deg,
@@ -74,6 +80,7 @@
       rgba(25, 55, 109, 1) 100%
     );
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    max-width: 90vw; /* Prevent overflow */
   }
 
   .menuOpen {
