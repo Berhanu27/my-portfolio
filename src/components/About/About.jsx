@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
 import { FiMousePointer, FiServer, FiPenTool } from "react-icons/fi";
-import aboutImage from "./aboutimage.png";
-
 
 const About = () => {
   return (
@@ -12,11 +10,11 @@ const About = () => {
       <div className={styles.content}>
 
         {/* LEFT SIDE IMAGE */}
-        <img src={aboutImage} alt="About section" className={styles.aboutImg} />
+        <img src="/aboutimage.png" alt="About section" className={styles.aboutImg} />
 
         {/* RIGHT SIDE ITEMS */}
         <ul className={styles.aboutItems}>
-          
+
           {/* Frontend */}
           <li className={styles.aboutItem}>
             <FiMousePointer className={styles.icon} />
