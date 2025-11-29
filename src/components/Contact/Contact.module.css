@@ -52,9 +52,14 @@
         flex-direction: column;
         gap: 23px;
         align-items: center;
-        padding: 40px 5%; /* better for mobile */
+        padding: 40px 5%;
     }
-
+   
+        .link a {
+            font-size: 20px;   /* change to whatever size you want */
+        }
+    
+    
     .text h2 {
         font-size: 50px;
         text-align: center;
@@ -66,12 +71,25 @@
     }
 
     .links {
-        align-items: left;
-        font-size: 5px;
+        width: 100%;               /* allows left alignment */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;   /* TRUE left alignment */
+        gap: 30px;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 100%;               /* prevents centering */
+    }
+
+    .icon {
+        font-size: 32px;
+        min-width: 32px;           /* icons line perfectly */
+        text-align: left;
     }
 }
-.icon {
-    font-size: 40px;
-    
-}
-
