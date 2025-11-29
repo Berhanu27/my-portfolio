@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./About.module.css";
 import { FiMousePointer, FiServer, FiPenTool } from "react-icons/fi";
-import aboutImage from "./aboutImage.png";
+import aboutImage from "./aboutimage.png";
+
 
 const About = () => {
   return (
