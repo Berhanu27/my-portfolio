@@ -91,3 +91,15 @@
     display: flex;
   }
 }
+@media screen and (max-width: 830px) {
+  .menu {
+    position: relative;    /* FIX */
+    top: 0;                /* FIX */
+    right: 0;              /* FIX */
+    width: 100%;           /* so it aligns nicely */
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+  }
+}
+
