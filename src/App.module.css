@@ -1,6 +1,7 @@
 .App {
   background-color: var(--color-bg);
   width: 100%;
-  min-height: 100vh; /* FIXES the gap */
-  overflow-x: hidden; /* prevents horizontal scroll bar */
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }

@@ -1,26 +1,26 @@
 [
   {
     "image": "projects/projectA.png",
-    "title": "Project A",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "stack": ["React", "Express", "Node"],
-    "demo": "https://demo.com",
-    "source": "https://github.com/mylink"
+    "title": "E-Commerce Store",
+    "description": "A full-featured e-commerce application with product catalog, shopping cart, user authentication, and seamless checkout experience.",
+    "stack": ["React", "Node.js", "Express", "MongoDB"],
+    "demo": "https://frontend-amber-nine-35.vercel.app",
+    "source": "https://github.com/Berhanu27"
   },
   {
     "image": "projects/projectB.png",
     "title": "Project B",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "A modern web application showcasing responsive design and interactive user interfaces.",
     "stack": ["React", "Express", "Node"],
     "demo": "https://demo.com",
-    "source": "https://github.com/mylink"
+    "source": "https://github.com/Berhanu27"
   },
   {
     "image": "projects/projectC.png",
     "title": "Project C",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "An innovative solution built with cutting-edge technologies for optimal performance.",
     "stack": ["React", "Express", "Node"],
     "demo": "https://demo.com",
-    "source": "https://github.com/mylink"
+    "source": "https://github.com/Berhanu27"
   }
 ]

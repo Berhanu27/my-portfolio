@@ -1,56 +1,196 @@
-.projectsContainer {
-  width: 100%;
-  padding: 40px 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  box-sizing: border-box;   /* prevents overflow */
+@import "../../vars.css";
+
+.container {
+  padding: 100px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Project Card */
-.card {
-  background: #0b2447;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-  color: white;
-  overflow: hidden;          /* prevents any content from creating overflow */
+.header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
 }
 
-/* Image Styling */
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;            /* FIXES ghost spacing below images */
-}
-
-/* Tablet: 2 Cards Per Row */
-@media (max-width: 900px) {
-  .projectsContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Phone: 1 Card Per Row */
-@media (max-width: 600px) {
-  .projectsContainer {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .card img {
-    height: 180px;
-  }
-}
-
-/* Links */
-.card a {
-  color: #4da3ff;
+.label {
+  display: inline-block;
+  font-size: 14px;
   font-weight: 600;
-  text-decoration: underline;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
 }
 
-.card a:hover {
-  color: #ffffff;
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--color-text-muted);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-glow);
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: var(--transition-slow);
+}
+
+.card:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  opacity: 0;
+  transition: var(--transition-normal);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlayBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  transition: var(--transition-normal);
+  transform: translateY(20px);
+}
+
+.card:hover .overlayBtn {
+  transform: translateY(0);
+}
+
+.overlayBtn:hover {
+  background: var(--color-primary-light);
+  transform: scale(1.1);
+}
+
+.cardContent {
+  padding: 24px;
+}
+
+.projectTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.projectDescription {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.techTag {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--color-primary-light);
+  border-radius: 50px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.demoLink,
+.sourceLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.demoLink {
+  color: var(--color-primary);
+}
+
+.demoLink:hover {
+  color: var(--color-accent);
+}
+
+.sourceLink {
+  color: var(--color-text-muted);
+}
+
+.sourceLink:hover {
+  color: var(--color-text);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectImage {
+    height: 200px;
+  }
+
+  .cardContent {
+    padding: 20px;
+  }
 }

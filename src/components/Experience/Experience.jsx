@@ -5,16 +5,26 @@ import styles from "./Experience.module.css";
 const Experience = () => {
   return (
     <section id="experience" className={styles.container}>
-      <h2 className={styles.title}>Experience</h2>
+      <div className={styles.header}>
+        <span className={styles.label}>Skills</span>
+        <h2 className={styles.title}>Technologies I Work With</h2>
+        <p className={styles.subtitle}>
+          Here are the tools and technologies I use to bring ideas to life
+        </p>
+      </div>
 
       <div className={styles.grid}>
         {experience.map((item, index) => {
           const Icon = item.icon;
           return (
             <div key={index} className={styles.card}>
-              <Icon size={40} />
-              <h3>{item.name}</h3>
-              <p>{item.level}</p>
+              <div className={styles.iconWrapper}>
+                <Icon className={styles.icon} />
+              </div>
+              <h3 className={styles.skillName}>{item.name}</h3>
+              <span className={`${styles.level} ${styles[item.level.toLowerCase()]}`}>
+                {item.level}
+              </span>
             </div>
           );
         })}
