@@ -9,10 +9,10 @@
   },
   {
     "image": "projects/projectB.png",
-    "title": "Project B",
-    "description": "A modern web application showcasing responsive design and interactive user interfaces.",
-    "stack": ["React", "Express", "Node"],
-    "demo": "https://demo.com",
+    "title": "Food Delivery App",
+    "description": "A full-featured food delivery platform with restaurant listings, cart management, and seamless ordering experience.",
+    "stack": ["React", "Node.js", "Express", "MongoDB"],
+    "demo": "https://food-delivery-frontend-lemon-ten.vercel.app",
     "source": "https://github.com/Berhanu27"
   },
   {
