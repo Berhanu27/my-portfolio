@@ -17,10 +17,10 @@
   },
   {
     "image": "projects/projectC.png",
-    "title": "Project C",
-    "description": "An innovative solution built with cutting-edge technologies for optimal performance.",
-    "stack": ["React", "Express", "Node"],
-    "demo": "https://demo.com",
+    "title": "Real-Time Chat App",
+    "description": "A modern real-time chat application with instant messaging, user authentication, and responsive design for seamless communication.",
+    "stack": ["React", "Socket.io", "Node.js", "Express"],
+    "demo": "https://chat-app27-brml.vercel.app/",
     "source": "https://github.com/Berhanu27"
   }
 ]
