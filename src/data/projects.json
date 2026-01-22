@@ -20,7 +20,7 @@
     "title": "Real-Time Chat App",
     "description": "A modern real-time chat application with instant messaging, user authentication, and responsive design for seamless communication.",
     "stack": ["React", "Socket.io", "Node.js", "Express"],
-    "demo": "https://lustrous-kheer-2f14d3.netlify.app/chat",
+    "demo": "https://chat-app27.netlify.app/chat",
     "source": "https://github.com/Berhanu27"
   }
 ]
